@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home {
+    background-image: url('../img/back.jpeg');
+    background-position: 100% 100%;
+    background-size: cover cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.quote-body {
+    width: 605px;
+    background: #7a5d3a;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+header,
+.content i,
+.content p,
+.content span {
+    color: #fff;
+}
+
+.quote-body header {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.quote-body .content {
+    margin: 35px 0;
+}
+
+.content .quote-content {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-content i {
+    font-size: 15px;
+}
+
+.quote-content i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.quote-content i:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-content .quote {
+    font-size: 22px;
+    text-align: center;
+}
+
+.content .author {
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+
+.content .author .name {
+    padding: 3px 3px;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+}
+
+.content .author .name:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.175);
+}
+
+.quote-body .buttons {
+    border-top: 1px solid #ccc;
+}
+
+.buttons ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.buttons .features {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features ul {
+    display: flex;
+}
+
+.features ul li {
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    color: #fff;
+    list-style: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    transition: all 0.4s ease;
+}
+
+.features ul li:first-child {
+    margin-left: 0;
+}
+
+ul li:is(:hover,
+.active) {
+    color: #000;
+    background: #fff;
+}
+
+
+/* ul .speech.active {
+    pointer-events: none;
+} */
+
+.buttons button {
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #000;
+}
